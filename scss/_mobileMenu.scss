@@ -27,6 +27,7 @@
 	position: relative;
   	height: 44px;
     width: 44px;
+	z-index: 999;
 	cursor:pointer;
     .line {
         position: absolute;
@@ -61,7 +62,7 @@
 	#primaryNav {
         height: 0;
         overflow: hidden;
-		width: 22rem;
+		width: 17rem;
 		background-color: $primaryColor; 
 		margin: 0;
 		padding: 0;

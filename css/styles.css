@@ -665,8 +665,7 @@ nav ul.hide {
   position: relative;
   display: flex;
   justify-content: end;
-  top: -45px;
-  bottom: 0; }
+  top: -45px; }
   #form input {
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -697,23 +696,46 @@ main {
     color: #004141; }
 
 .cards {
-  column-count: 2;
-  margin-bottom: 1rem; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem; }
 
 #take {
-  width: 100%;
+  width: 200px;
   position: relative;
-  height: auto; }
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 75%; }
   #take img {
-    width: 100%;
+    width: 90%;
     height: auto; }
+
+#take:hover {
+  opacity: 100%;
+  transition: opacity .25s ease-in-out; }
+
+#family:hover {
+  opacity: 100%;
+  transition: opacity .25s ease-in-out; }
+
+#urban:hover {
+  opacity: 100%;
+  transition: opacity .25s ease-in-out; }
+
+#hotel:hover {
+  opacity: 100%;
+  transition: opacity .25s ease-in-out; }
 
 #date {
   position: absolute;
   bottom: 5px;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
-  width: 100%;
+  width: 90%;
   text-align: center;
   padding: 0.4rem; }
 
@@ -722,32 +744,44 @@ main {
   top: 0;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
-  width: 100%;
+  width: 90%;
   text-align: center;
   padding: 0.4rem; }
 
 #family {
-  width: 100%;
+  width: 200px;
   position: relative;
-  height: auto; }
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 75%; }
   #family img {
-    width: 100%;
+    width: 90%;
     height: auto; }
 
 #urban {
-  width: 100%;
+  width: 200px;
   position: relative;
-  height: auto; }
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 75%; }
   #urban img {
-    width: 100%;
+    width: 90%;
     height: auto; }
 
 #hotel {
-  width: 100%;
+  width: 200px;
   position: relative;
-  height: auto; }
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 75%; }
   #hotel img {
-    width: 100%;
+    width: 90%;
     height: auto; }
 
 #socialWrap {
@@ -785,11 +819,13 @@ main {
   background-color: #8dafce;
   color: white; }
 
-.phone {
-  color: white; }
+.phone2 {
+  color: white;
+  text-decoration: none; }
 
 #subWrap {
-  background-color: #8dafce; }
+  background-color: #8dafce;
+  padding: 0 2%; }
 
 .footerRow {
   margin-right: 1rem; }
@@ -853,6 +889,7 @@ footer {
     position: relative;
     height: 44px;
     width: 44px;
+    z-index: 999;
     cursor: pointer; }
     #hamburgerBtn .line {
       position: absolute;
@@ -881,7 +918,7 @@ footer {
   #primaryNav {
     height: 0;
     overflow: hidden;
-    width: 22rem;
+    width: 17rem;
     background-color: #8dafce;
     margin: 0;
     padding: 0;
@@ -982,9 +1019,6 @@ footer {
       left: auto;
       margin-left: 0; }
 
-  main .cards {
-    column-count: 2; }
-
   div.footerGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1000,8 +1034,6 @@ footer {
 
   main {
     margin: auto; }
-    main .cards {
-      column-count: 4; }
 
   div.footerGrid {
     display: grid;
