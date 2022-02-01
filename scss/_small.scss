@@ -80,10 +80,6 @@ nav ul.hide {
     display: none;
 }
 
-#formContainer {
-
-}
-
 #form {
     position: relative;
     display: flex;
@@ -177,7 +173,7 @@ main {
     transition: opacity .25s ease-in-out;
 }
 
-#date {
+.date {
     position: absolute;
     bottom: 5px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -187,7 +183,7 @@ main {
     padding: 0.4rem;
 }
 
-#title {
+.title {
     position: absolute;
     top: 0;
     background-color: rgba(0, 0, 0, 0.4);
