@@ -866,8 +866,7 @@ h2.cruisesHeader {
   border-radius: 5px; }
 
 .cruiseDescription a button:hover {
-  background-color: #bccedd;
-  transition: background .4s; }
+  background-color: #bccedd; }
 
 #socialWrap {
   background-color: #8dafce;
