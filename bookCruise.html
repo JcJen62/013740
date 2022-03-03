@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Fill Me In" />
+    <meta name="author" content="John Doe" />
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Assignment 1</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maxium-scale=1"
+    />
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <div class="headWrap">
+      <header class="clearfix">
+        <figure>
+          <img
+            src="images/logo0.png"
+            alt="Logo"
+            srcset="
+              images/logo1.png 1x,
+              images/logo2.png 2x,
+              images/logo3.png 3x
+            "
+          />
+        </figure>
+        <h1>Cabot Cruises</h1>
+        <a href="tel:+18005551234" class="phone">1-800-555-1234</a>
+      </header>
+    </div>
+    <!-- NAVIGATION HERE -->
+    <div class="navWrap">
+      <nav class="clearfix">
+        <button id="hamburgerBtn">
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+
+        <div class="menu-container">
+          <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cruise.html">Cruises</a></li>
+            <li class="active parent">
+              <a href="#">Agents</a>
+              <ul>
+                <li><a href="agent1.html">Sally Rogers</a></li>
+                <li><a href="agent2.html">Buddy Sorrell</a></li>
+              </ul>
+            </li>
+            <li><a href="bookCruise.html">Book</a></li>
+          </ul>
+
+        <div id="formContainer">
+          <form id="form" method="get" action="/">
+            <input type="search" placeholder="Search" name="s" />
+            <button class="search" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <!-- CONTENT HERE -->
+    <main>
+        <h2 class="bookingHeader">Book a Cruise</h2>
+        <div id="formContainer">
+            <form>
+                <label class="labelInfo">Full Name* <input type="text" name="name" required></label>
+                <label class="labelInfo">Address <input type="text" name="address"></label>
+                <label class="labelInfo">City <input type="text" name="city"></label>
+                <label class="labelInfo">State
+                    <select>
+                        <option>-Please Select-</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </label>
+                <label class="labelInfo">Zipcode <input type="number" name="zipcode"></label>
+                <label class="labelInfo">Phone* <input type="tel" name="phone" required></label>
+                <label class="labelInfo">Email* <input type="email" name="email" placeholder="800-123-4567" required></label>
+                <label class="labelInfo">Cruise Selection*
+                    <select>
+                        <option>-Please Select-</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Caribbean">Caribbean</option>
+                        <option value="Australia">Australia</option>
+                        <option value="New Zealand">New Zealand</option>
+                    </select>
+                </label>
+                <button id="bookBtn">Book My Cruise</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="subWrap">
+      <div id="subFoot">
+        <div class="footerGrid">
+          <div class="footerRow">
+              <h2>Contact Us</h2>
+              <a
+                id="addressLink"
+                href="https://www.google.com/maps/place/Walmart+Supercenter/@40.3694274,-111.8210866,15z/data=!4m5!3m4!1s0x874d81bb2d8d0037:0x991bd843e1b46971!8m2!3d40.3849171!4d-111.8249991"
+              >
+                CABOT CRUIZES <br />
+                949 Grassland Dr <br />
+                American Fork, UT 84003
+              </a>
+
+              <h2>Phone:</h2>
+              <a href="tel:+18005551234" class="phone2">1-800-555-1234</a>
+
+              <h2>Hours of Operation:</h2>
+              <p>Monday - Friday 9am - 4pm</p>
+          </div>
+          <div class="footerRow">
+            <h2>News Letter</h2>
+            <p>
+              Subscribe to our email list and stay up-to-date with our hottest
+              offers and latest specials.
+            </p>
+            <form action="#">
+              <input
+                id="emailInput"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <br />
+              <button id="subEmail" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footerRow">
+              <h2>Why Cabot Cruises</h2>
+              <p>
+                Cabot Cruises is a travel agency providing the best cruise deals
+                on our online travel website. We can help you with all inclusive
+                vacaMons including discounted cruises.
+              </p>
+
+              <p>
+                We do not sell travel to residents of Delaware, Iowa, Florida,
+                Hawaii and Washington state because those states are just wierd.
+                If you are a resident of one of these states, call your
+                congressman and tell them to change the regulaMons.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="socialWrap">
+      <a class="fab fa-facebook-square"></a>
+      <a class="fab fa-twitter-square"></a>
+      <a class="fab fa-instagram"></a>
+      <a class="fab fa-youtube"></a>
+      <a class="fab fa-pinterest"></a>
+    </div>
+
+    <!-- FOOTER HERE -->
+    <div class="footWrap">
+      <footer>
+        &copy; 2021 Jeremy Jensen
+        <a href="https://jeremyjensen.net/">Portfolio</a>
+      </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".my_slider").slick({
+          dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 1000,
+          cssEase: "ease-out",
+          autoplay: true,
+          autoplaySpeed: 3000,
+        });
+      });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "image": "https://dgm3740assignment1.jeremyjensen.net/images/logo2.png",
+        "name": "Cabot Cruises",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "949 Grassland Dr",
+          "addressLocality": "American Fork",
+          "addressRegion": "UT",
+          "postalCode": "84003",
+          "addressCountry": "US"
+        },
+        "url": "https://dgm3740assignment1.jeremyjensen.net/",
+        "telephone": "8011234567",
+        "openingHours": "Mo-Fr 9-4",
+        "priceRange": "400-1,000"
+      }
+    </script>
+  </body>
+</html>

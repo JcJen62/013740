@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Fill Me In" />
+    <meta name="author" content="John Doe" />
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Assignment 1</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maxium-scale=1"
+    />
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <div class="headWrap">
+      <header class="clearfix">
+        <figure>
+          <img
+            src="images/logo0.png"
+            alt="Logo"
+            srcset="
+              images/logo1.png 1x,
+              images/logo2.png 2x,
+              images/logo3.png 3x
+            "
+          />
+        </figure>
+        <h1>Cabot Cruises</h1>
+        <a href="tel:+18005551234" class="phone">1-800-555-1234</a>
+      </header>
+    </div>
+    <!-- NAVIGATION HERE -->
+    <div class="navWrap">
+      <nav class="clearfix">
+        <button id="hamburgerBtn">
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+
+        <div class="menu-container">
+            <ul id="primaryNav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cruise.html">Cruises</a></li>
+              <li class="active parent">
+                <a href="#">Agents</a>
+                <ul>
+                  <li><a href="agent1.html">Sally Rogers</a></li>
+                  <li><a href="agent2.html">Buddy Sorrell</a></li>
+                </ul>
+              </li>
+              <li><a href="bookCruise.html">Book</a></li>
+            </ul>
+
+        <div id="formContainer">
+          <form id="form" method="get" action="/">
+            <input type="search" placeholder="Search" name="s" />
+            <button class="search" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <!-- CONTENT HERE -->
+    <main>
+        <h2 class="cruisesHeader">Cruises</h2>
+
+        <div id="cruisesDiv">
+            <div class="cruiseOption">
+                <img src="images/cruisebook1.jpg" alt="Bahamas Cruise">
+                <div class="cruiseDescription">
+                    <h3>The Bahamas from Miami, FL - As low as $129/night</h3>
+                    <p>You know the name, the laid-back attitude and where to find them, but you’ll just have to visit The Bahamas to truly appreciate this classic cruise destination. On this 700-strong string of sun-splashed islands dotting the blue Atlantic, the living’s easy. (And it’s not bad on a Bahamas cruise either!) Enjoy sailing, snorkeling, strolling pearly pink-sand beaches, and swimming through crystalline turquoise seas on a Bahamas cruise.</p>
+                    <a href="#">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="cruiseOption">
+                <img src="images/cruisebook2.jpg" alt="Caribbean Cruise">
+                <div class="cruiseDescription">
+                    <h3>Western Carribbean from Tampa, FL - As low as $219/night</h3>
+                    <p>We don’t have proof, but evidence suggests that the Caribbean was made for cruising. This evidence is all around you — you’ll find in the Caribbean air, the sand and the water. And with more than 5,000 islands and cays spread across this amazing region, there’s a lot of paradise to see. So how do you choose where to visit on a Caribbean cruise? We recommend you just go and see for yourself! Best of all, the mild climate means it doesn’t even matter what time of year you go.</p>
+                    <a href="#">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="cruiseOption">
+                <img src="images/cruisebook3.jpg" alt="New Zealand Cruise">
+                <div class="cruiseDescription">
+                    <h3>New Zealand from Syndney, Australia - As low as $626/night</h3>
+                    <p>Enjoy the adventure of a New Zealand cruise. Sail across the Tasman and explore both the North Island and South Island. Cabot Cruises will take you into the Bay of Islands, and through the natural beauty of the fjords and waterfalls of Fiordland National Park, home of Milford Sound. Experience Maori culture, enjoy art deco buildings, bungee jump kiwi-style from the Auckland Harbour Bridge, or climb the famous Sky Tower. Enjoy Wellington food and the heritage of the largest city on the South Island, Christchurch.</p>
+                    <a href="#">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="cruiseOption">
+                <img src="images/cruisebook4.jpg" alt="Australia Cruise">
+                <div class="cruiseDescription">
+                    <h3>Getaway from Syndney, Australia - As low as $184/night</h3>
+                    <p>The land down under offers amazing cruise destinations with Cabot Cruises. Enjoy foodie adventures in Tasmania, visit the heritage-listed Great Barrier Reef, or snorkel the wrecks at Moreton Island - when you board a cruise to Australia with Cabot Cruises. We offer a wide range of world-class cruises to Australia. You can cruise from Sydney or Brisbane to a range of destinations across the nation.</p>
+                    <a href="#">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </main>
+
+    <div id="subWrap">
+      <div id="subFoot">
+        <div class="footerGrid">
+          <div class="footerRow">
+              <h2>Contact Us</h2>
+              <a
+                id="addressLink"
+                href="https://www.google.com/maps/place/Walmart+Supercenter/@40.3694274,-111.8210866,15z/data=!4m5!3m4!1s0x874d81bb2d8d0037:0x991bd843e1b46971!8m2!3d40.3849171!4d-111.8249991"
+              >
+                CABOT CRUIZES <br />
+                949 Grassland Dr <br />
+                American Fork, UT 84003
+              </a>
+
+              <h2>Phone:</h2>
+              <a href="tel:+18005551234" class="phone2">1-800-555-1234</a>
+
+              <h2>Hours of Operation:</h2>
+              <p>Monday - Friday 9am - 4pm</p>
+          </div>
+          <div class="footerRow">
+            <h2>News Letter</h2>
+            <p>
+              Subscribe to our email list and stay up-to-date with our hottest
+              offers and latest specials.
+            </p>
+            <form action="#">
+              <input
+                id="emailInput"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <br />
+              <button id="subEmail" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footerRow">
+              <h2>Why Cabot Cruises</h2>
+              <p>
+                Cabot Cruises is a travel agency providing the best cruise deals
+                on our online travel website. We can help you with all inclusive
+                vacaMons including discounted cruises.
+              </p>
+
+              <p>
+                We do not sell travel to residents of Delaware, Iowa, Florida,
+                Hawaii and Washington state because those states are just wierd.
+                If you are a resident of one of these states, call your
+                congressman and tell them to change the regulaMons.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="socialWrap">
+      <a class="fab fa-facebook-square"></a>
+      <a class="fab fa-twitter-square"></a>
+      <a class="fab fa-instagram"></a>
+      <a class="fab fa-youtube"></a>
+      <a class="fab fa-pinterest"></a>
+    </div>
+
+    <!-- FOOTER HERE -->
+    <div class="footWrap">
+      <footer>
+        &copy; 2021 Jeremy Jensen
+        <a href="https://jeremyjensen.net/">Portfolio</a>
+      </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".my_slider").slick({
+          dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 1000,
+          cssEase: "ease-out",
+          autoplay: true,
+          autoplaySpeed: 3000,
+        });
+      });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "image": "https://dgm3740assignment1.jeremyjensen.net/images/logo2.png",
+        "name": "Cabot Cruises",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "949 Grassland Dr",
+          "addressLocality": "American Fork",
+          "addressRegion": "UT",
+          "postalCode": "84003",
+          "addressCountry": "US"
+        },
+        "url": "https://dgm3740assignment1.jeremyjensen.net/",
+        "telephone": "8011234567",
+        "openingHours": "Mo-Fr 9-4",
+        "priceRange": "400-1,000"
+      }
+    </script>
+  </body>
+</html>
